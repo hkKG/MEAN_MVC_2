@@ -1,0 +1,9 @@
+### code is based on the MEAN.JS framework ==> MEAN Web Development by Amos Haviv
+https://hackhands.com/delving-node-js-express-web-framework
+
+A very common feature of web frameworks is the ability to render views.
+The basic concept is passing your data to a template engine that will render the final view usually in HTML.
+In the MVC pattern, your controller uses the model to retrieve the data portion
+and the view template to render the HTML output.
+
+controllers - contains Express application controllers

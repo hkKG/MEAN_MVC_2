@@ -1,0 +1,21 @@
+### code is based on the MEAN.JS framework ==> MEAN Web Development by Amos Haviv
+https://hackhands.com/delving-node-js-express-web-framework
+
+The config folder is where we'll keep our Express application configuration files.
+It will contain several files and folders:
+
+## env - contains Express application environment configuration files
+
+
+
+## config.js - contains configuration code of our Express application
+
+
+
+## app.js - contains initialization code of our Express application
+#require() method is used to load the module into your code [CommonJS standart specify]
+#exports-object is contained in each module and allows you to expose pieces of your code when the module is loaded
+#module-object was originally used to provide metadata information about the module. It also contains the pointer to an exports object as a property
+
+
+

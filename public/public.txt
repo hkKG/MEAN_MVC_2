@@ -1,0 +1,5 @@
+### code is based on the MEAN.JS framework ==> MEAN Web Development by Amos Haviv
+https://hackhands.com/delving-node-js-express-web-framework
+
+The public folder is where we'll keep our static client-side files and it will be also divided into the folders
+that represent a separation of functionality to comply with the MVC pattern.

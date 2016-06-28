@@ -1,0 +1,39 @@
+{
+  "name": "MEAN_MVC_2",
+  "version": "0.0.0",
+  "description": "xxx",
+  "private": true,
+  "main":"./bin/www",
+  "scripts": {
+    "001-start-bin-www": "node ./bin/www",
+    "002-start-test_app-color_converter_server": "node ./test_app/color_converter_server",
+    "003-start-test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xxx.git"
+  },
+  "keywords": [
+    "MEAN",
+    "MVC",
+    "Express4.x",
+    "BDD"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xxx/issues"
+  },
+  "homepage": "https://github.com/xxx",
+  "dependencies": {
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "debug": "*",
+    "ejs": "*",
+    "express": "*",
+    "morgan": "*",
+    "serve-favicon": "*",
+    "chai":"*",
+    "superagent":"*"
+  }
+}

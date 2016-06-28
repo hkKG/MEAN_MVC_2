@@ -1,0 +1,19 @@
+### code is based on the MEAN.JS framework ==> MEAN Web Development by Amos Haviv
+https://hackhands.com/delving-node-js-express-web-framework
+
+The app folder is where we'll keep our Express application logic and is divided into the following folders
+that represent a separation of functionality to comply with the MVC pattern:
+
+controllers - contains Express application controllers
+
+models - contains Express application models
+
+routes - contains Express application routing middleware
+
+views - contains Express application views
+
+So, basicalls, this whole MVC thing is jast away
+you structure your application in order
+to help yoe maintain it later when the project becomes big...
+
+
