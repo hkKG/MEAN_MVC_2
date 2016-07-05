@@ -36,13 +36,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname,'../public')));
 
 // ### Routing - 1 ### ==> generated
-// http://localhost:1337/express
-// http://localhost:1337/express/users
+// http://localhost:3000/express
+// http://localhost:3000/express/users
 app.use('/express', routes);
 app.use('/express/users', users);
 
 // ### Routing - 2 ###
-// http://localhost:1337/
+// http://localhost:3000/
 // wird als parameter an routes-Modul dann weitergereicht...
 require('../app/routes/mean/index.server.routes.js')(app);
 

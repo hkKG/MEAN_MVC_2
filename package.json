@@ -1,17 +1,17 @@
 {
   "name": "MEAN_MVC_2",
-  "version": "0.0.0",
-  "description": "xxx",
-  "private": true,
+  "version": "0.0.1",
+  "description": "MEAN_MVC_2",
+  "private": false,
   "main":"./bin/www",
   "scripts": {
-    "001-start-bin-www": "node ./bin/www",
+    "001-start-MEAN_MVC_2-bin-www": "node ./bin/www",
     "002-start-test_app-color_converter_server": "node ./test_app/color_converter_server",
     "003-start-test": "./node_modules/.bin/mocha --reporter spec"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/xxx.git"
+    "url": "https://github.com/hkKG/MEAN_MVC_2"
   },
   "keywords": [
     "MEAN",
@@ -19,12 +19,12 @@
     "Express4.x",
     "BDD"
   ],
-  "author": "",
+  "author": "hkKG",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/xxx/issues"
+    "url": "https://github.com/hkKG/MEAN_MVC_2/issues"
   },
-  "homepage": "https://github.com/xxx",
+  "homepage": "https://github.com/hkKG/MEAN_MVC_2",
   "dependencies": {
     "body-parser": "*",
     "cookie-parser": "*",

@@ -1,5 +1,6 @@
 /**
- * Created on 03.06.2016.
+ *  !!! used as template recipe !!!
+ * https://semaphoreci.com/community/tutorials/getting-started-with-node-js-and-mocha
  */
 
 var express = require("express");
@@ -24,7 +25,7 @@ app.get("/hexToRgb", function(req, res) {
     res.send(JSON.stringify(rgb));
 });
 
-app.listen(3000);
-console.log('test_app/color_converter_server gestartet :-) ');
-console.log('http://localhost:3000/rgbToHex?red=255&green=255&blue=255');
-console.log('http://localhost:3000/hexToRgb?hex=00ff00');
+app.listen(1337);
+console.log('test_app/color_converter_server gestartet :-) port ==> 1337 ');
+console.log('http://localhost:1337/rgbToHex?red=255&green=255&blue=255');
+console.log('http://localhost:1337/hexToRgb?hex=00ff00');

@@ -1,5 +1,6 @@
 /**
- * Created on 03.06.2016.
+ *  !!! used as template recipe !!!
+ * https://semaphoreci.com/community/tutorials/getting-started-with-node-js-and-mocha
  */
 exports.rgbToHex = function (red, green, blue) {
     var redHex = red.toString(16);

@@ -14,8 +14,6 @@
 /**
  * Module dependencies.
  */
-
-
 // vorkonfigurierter Express-Application-Object holen
 var app = require('../config/app');
 //var app = require('../tmp/app_generated');
@@ -29,7 +27,7 @@ var http = require('http');
 /**
  * Get port from environment and store in Express.
  */
-var port = normalizePort(process.env.PORT || '1337');
+var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 /**
  * Create HTTP server.

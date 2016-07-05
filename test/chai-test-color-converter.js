@@ -1,16 +1,22 @@
 /**
- * Created on 03.06.2016.
- *
+ * !!! used as template !!!
  * BDD: Behavior Driven Development
  *
- * Given-When-Then Szenarien als Tests
+ * Given-When-Then scenarios as test
  *
- * Keywords: mocha, chai, test, bdd, tdd, test anything protocol besteht aus UnitTest und TestHarness
- * TestHarness besteht Testausführungs-Engine und TestdatenRepository
+ * Keywords: mocha, chai, test, bdd, tdd,
  *
+ * test anything protocol includes UnitTests and TestHarness
+ *
+ * TestHarness includes Test-Execution-Engine and Test-Data-Repository *
+ *
+ * ping 127.0.0.1
  * https://semaphoreci.com/community/tutorials/getting-started-with-node-js-and-mocha
- *
- * https://chaijs.com
+ * webapplog.com/tdd
+ * chaijs.com/guide/stylis
+ * visionmedia.github.io/superagent
+ * visionmedia.github.io/superagent/#parsing-respons-bodies
+ * expect(1 + 1).to.equal(2);
  */
 
 var expect = require("chai").expect;
@@ -41,4 +47,3 @@ describe("### chai-test-color-converter.js ###", function () {
         });
     });
 });
-//expect(1 + 1).to.equal(2);

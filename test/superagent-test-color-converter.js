@@ -1,17 +1,22 @@
 /**
- * Created on 03.06.2016.
- *
+ * !!! used as template !!!
  * BDD: Behavior Driven Development
  *
- * Given-When-Then Szenarien als Tests
+ * Given-When-Then scenarios as test
  *
- * Keywords: mocha, test, bdd, tdd, test anything protocol besteht aus UnitTest und TestHarness
- * TestHarness besteht Testausführungs-Engine und TestdatenRepository
+ * Keywords: mocha, chai, test, bdd, tdd,
  *
- * semaphoreci.com/community/tutorials/getting-started-with-node-js-and-mocha
+ * test anything protocol includes UnitTests and TestHarness
  *
+ * TestHarness includes Test-Execution-Engine and Test-Data-Repository *
+ *
+ * ping 127.0.0.1
+ * https://semaphoreci.com/community/tutorials/getting-started-with-node-js-and-mocha
+ * webapplog.com/tdd
+ * chaijs.com/guide/stylis
  * visionmedia.github.io/superagent
  * visionmedia.github.io/superagent/#parsing-respons-bodies
+ * expect(1 + 1).to.equal(2);
  */
 var request = require("superagent");
 var chai = require("chai"),
@@ -19,11 +24,10 @@ var chai = require("chai"),
     expect = chai.expect, // BDD
     should = chai.should(); // BDD
 
-describe("### superagent-test-color-converter.js ==> RGB to Hex conversion ==> http://localhost:3000/rgbToHex?red=255&green=255&blue=255 ###", function () {
+describe("### superagent-test-color-converter.js ==> RGB to Hex conversion ==> http://localhost:1337/rgbToHex?red=255&green=255&blue=255 ###", function () {
     it("returns status 200", function (done) {
         request
-        // .get("http://localhost:3000/rgbToHex?red=255&green=255&blue=255")
-            .get("http://127.0.0.1:3000/rgbToHex?red=255&green=255&blue=255")
+            .get("http://127.0.0.1:1337/rgbToHex?red=255&green=255&blue=255")
             .end(function (err, res) {
                 // we expect error to not exist
                 should.not.exist(err);
@@ -37,8 +41,7 @@ describe("### superagent-test-color-converter.js ==> RGB to Hex conversion ==> h
 
     it("returns the color in hex", function (done) {
         request
-        // .get("http://localhost:3000/rgbToHex?red=255&green=255&blue=255")
-            .get("http://127.0.0.1:3000/rgbToHex?red=255&green=255&blue=255")
+            .get("http://127.0.0.1:1337/rgbToHex?red=255&green=255&blue=255")
             .end(function (err, res) {
                 // we expect error to not exist
                 should.not.exist(err);
@@ -54,11 +57,10 @@ describe("### superagent-test-color-converter.js ==> RGB to Hex conversion ==> h
     });
 });
 
-describe("### superagent-test-color-converter.js ==> Hex to RGB conversion http://localhost:3000/hexToRgb?hex=00ff00 ###", function () {
+describe("### superagent-test-color-converter.js ==> Hex to RGB conversion http://localhost:1337/hexToRgb?hex=00ff00 ###", function () {
     it("returns status 200", function (done) {
         request
-        // .get("http://localhost:3000/hexToRgb?hex=00ff00")
-            .get("http://127.0.0.1:3000/hexToRgb?hex=00ff00")
+            .get("http://127.0.0.1:1337/hexToRgb?hex=00ff00")
             .end(function (err, res) {
                 // we expect error to not exist
                 should.not.exist(err);
@@ -71,8 +73,7 @@ describe("### superagent-test-color-converter.js ==> Hex to RGB conversion http:
     });
     it("returns the color in RGB", function (done) {
         request
-        // .get("http://localhost:3000/hexToRgb?hex=00ff00")
-            .get("http://127.0.0.1:3000/hexToRgb?hex=00ff00")
+            .get("http://127.0.0.1:1337/hexToRgb?hex=00ff00")
             .end(function (err, res) {
                 // we expect error to not exist
                 should.not.exist(err);
